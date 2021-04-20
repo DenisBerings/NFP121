@@ -1,6 +1,5 @@
 package question3;
 
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,12 +29,12 @@ public class DeviceTest {
         assertEquals("Android OS", device.getOperatingSystem());
     }
 
-    @Test
-    public void checkPhoneNetworkName() {
-        Phone phone = new Phone();
-        assertTrue(phone instanceof MobileNetwork);
-        assertEquals("4G", phone.networkType());
-    }
+   @Test
+   public void checkPhoneNetworkName() {
+       Phone phone = new Phone();
+       assertTrue(phone instanceof MobileNetwork);
+       assertEquals("4G", phone.networkType());
+   }
 
     @Test
     public void checkComputerCableConnection() {

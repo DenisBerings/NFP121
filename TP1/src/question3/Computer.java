@@ -1,6 +1,7 @@
 package question3;
-
-public class Computer extends Device implements Ethernet{
+/* On étend la classe abstraite Device à notre classe Computer pour que cette dernière hérite de ses méthodes.
+ */
+public class Computer extends Device implements Ethernet {
     private int ramSlot;
     private String videoCardname;
 
@@ -20,8 +21,9 @@ public class Computer extends Device implements Ethernet{
         this.videoCardname = videoCardname;
     }
 
+
+    @Override
     public boolean cableConnected() {
         return true;
     }
-
 }
