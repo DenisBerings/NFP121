@@ -1,5 +1,5 @@
 package question1;
-// On implémente l'interface Strategy sur la classe PilafStrategy
+// On implémente l'interface Strategy sur la classe PilafStrategy pour que cette dernière hérite de sa méthode cookRice()
 public class PilafStrategy implements Strategy {
     // On surcharge la méthode cookRice héritée de l'interface Strategy...
     @Override
