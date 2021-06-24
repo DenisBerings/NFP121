@@ -2,7 +2,7 @@ package question2;
 
 
 import java.util.Observable;
-
+// On implémente l'interface java Observable afin que la classe Number hérite de ses méthodes
 public class Number extends Observable {
     // On déclare une variable "value" (entier)
     private int value;
