@@ -2,8 +2,8 @@ package question2;
 
 public class Controller {
     /* On déclare 2 objets :
-     * - un objet number instance de la classe Number
-     * - un objet view instance de la classe View
+     * - un objet number de type Number
+     * - un objet view ide type View
      */
     private Number number;
     private View view;
