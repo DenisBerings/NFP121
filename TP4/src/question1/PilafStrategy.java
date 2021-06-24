@@ -1,7 +1,7 @@
 package question1;
 // On implémente l'interface Strategy sur la classe PilafStrategy
 public class PilafStrategy implements Strategy {
-    // On ajoute un type de retour "RiceCookingWays et on retourne le bon type de "RiceCookingWays"
+    // On surcharge la méthode cookRice héritée de l'interface Strategy...
     @Override
     public RiceCookingWays cookRice() {
         System.out.println("Heat oil in a skillet.");
@@ -9,6 +9,7 @@ public class PilafStrategy implements Strategy {
         System.out.println("Add rice.");
         System.out.println("Add liquid.");
         System.out.println("Cover and let cook.");
+        // ...et on lui fait retourner l'enum RiceCookingWays.PILAF
         return RiceCookingWays.PILAF;
     }
 }
