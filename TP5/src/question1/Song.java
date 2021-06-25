@@ -11,17 +11,16 @@ public class Song extends SongComponent {
         this.bandName = bandName;
         this.releaseYear = releaseYear;
     }
-    // On surcharge la méthode getSongName() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable songName instanciée
+    // On surcharge le getter getSongName() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable songName instanciée
     @Override
     public String getSongName() {
         return songName;
-    }
-    // On surcharge la méthode getBandName() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable bandName instanciée
+    }le getterla méthode getBandName() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable bandName instanciée
     @Override
     public String getBandName() {
         return bandName;
     }
-    // On surcharge la méthode getReleaseYear() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable releaseYear instanciée
+    // On surcharge le getter getReleaseYear() héritée de la classe abstraite SongComponent, pour lui faire retourner la variable releaseYear instanciée
     @Override
     public int getReleaseYear() {
         return releaseYear;
