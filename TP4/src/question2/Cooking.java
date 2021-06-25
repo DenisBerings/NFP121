@@ -3,7 +3,7 @@ package question2;
 public class Cooking {
     // On déclare une variable de type RiceType
     private RiceType riceType;
-    // On compléte le constructeur pour qu'il instancie la variable riceType
+    // On crée un constructeur qui prend un argument de type RiceType en paramètre 
     Cooking(RiceType riceType) {
         this.riceType = riceType;
     }
