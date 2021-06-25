@@ -1,20 +1,14 @@
 package question1;
 
-import java.util.List;
-import java.util.ArrayList;
-
-public class MusicStore extends SongComponent {
-
-    private SongComponent everySong;
-    public List songList = new ArrayList();
-
-
-    public MusicStore(SongComponent everySong) {
-        super();
+public class MusicStore {
+    // On déclare une variable de type SongComponent
+    SongComponent songList;
+    // On crée un constructeur qui prend le SongComponent en paramètre et l'instancie
+    public MusicStore(SongComponent songList) {
+        this.songList = songList;
     }
-
+    // On crée une méthode qui va appeler la méthode displayInfo() sur le songComponent instancié
     public void getSongList() {
-        everySong.displaySongInfo();
+        songList.displaySongInfo();
     }
-
 }
