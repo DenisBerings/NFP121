@@ -23,7 +23,7 @@ public class SongGroup extends SongComponent {
         super.add(newSongComponent);
         songComponents.add(newSongComponent);
     }
-    /* On la méthode remove() héritée de la classe abstraite SongComponent, qu'elle retire le 
+    /* On surcharge la méthode remove() héritée de la classe abstraite SongComponent, qu'elle retire le 
        songComponent passé en paramètre de la liste de songComponents instanciée */
     @Override
     public void remove(SongComponent songComponent) {
