@@ -1,6 +1,6 @@
 package question3;
 
-// On implémente l'interface Expression sur cette classe pour que celle-ci hérite de sa méthode interpreter()
+// On implémente l'interface Expression sur cette classe pour que celle-ci hérite de sa méthode accept()
 public class Substraction implements Expression {
     // On déclare 2 objets de type Expression
     Expression op1;
