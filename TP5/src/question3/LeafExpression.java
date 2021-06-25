@@ -11,7 +11,7 @@ public class LeafExpression implements Expression {
     public int getValue() {
         return value;
     }
-    /* On surcharge la méthode abstraite accept() hétitée de l'interface Expression pour qu'elle 
+    /* On surcharge la méthode abstraite accept() héritée de l'interface Expression pour qu'elle 
        retourne un appel à la méthode visit sur la liste de Visitor passée en paramaère */
     @Override
     public <T> T accept(Visitor<T> v) {
