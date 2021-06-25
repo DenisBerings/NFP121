@@ -11,7 +11,7 @@ public class Substraction implements Expression {
         this.op2 = op2;
     }
     /* On surcharge la méthode abstraite accept() héritée de l'interface Expression pour qu'elle 
-       retourne un appel à la méthode visit() sur la liste de Visitor passée en paramaère */
+       retourne un appel à la méthode visit() sur la liste de Visitor passée en paramètre */
     @Override
     public <T> T accept(Visitor<T> v) {
         return v.visit(this);
