@@ -1,5 +1,5 @@
 package question2;
-// On implémente l'interface Expression pour que celle-ci hérite de sa méthode interpreter()
+// On implémente l'interface Expression sur cette classe pour que celle-ci hérite de sa méthode interpreter()
 public class LeafExpression implements Expression {
     // On déclare un entier value
     private int value;
