@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class SongGroup extends SongComponent {
     // On déclare une liste de songComponents... 
     List songComponents = new ArrayList();
-    //...ainsi que 2 variables (String) songGroup & songDescription
+    //...ainsi que 2 variables (String) groupName & groupDescription
     String groupName;
     String groupDescription;
     // On crée un constructeur qui prend 2 arguments en paramètres, les String groupName & groupDescription
@@ -34,13 +34,24 @@ public class SongGroup extends SongComponent {
     public SongComponent getComponent(int index) {
         return (SongComponent) this.songComponents.get(index);
     }
-    // On surcharge la méthode displaySongInfo() héritée de la classe abstraite SongComponent, pour lui faire afficher les infos de Song
+    // On génère les getters pour les 2 variables (String) groupName & groupDescription
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public String getGroupDescription() {
+        return groupDescription;
+    }
+    /* On surcharge la méthode displaySongInfo() héritée de la classe abstraite SongComponent, pour qu'elle :
+       - affiche le nom du groupe et sa description (en appelant le getters)
+       - boucle sur cahque membre (SongComponent/Song) de la liste et affiche ses infos (en appelant displaySongInfo de Song)*/
     public void displaySongInfo() {
-        System.out.println(getSongName());
-        Iterator songIterator = this.songComponents.iterator();
-        while (songIterator.hasNext()) {
+        System.out.println(getGroupName() + " " +getGroupDescription() + "\n");
+        Iterator songIterator = songComponents.iterator();
+        while(songIterator.hasNext()) {
             SongComponent songInfo = (SongComponent) songIterator.next();
-        }
+            songInfo.displaySongInfo();
+        }  
     }
 }
 
