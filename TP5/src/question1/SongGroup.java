@@ -42,11 +42,11 @@ public class SongGroup extends SongComponent {
     public String getGroupDescription() {
         return groupDescription;
     }
-    /* On surcharge la méthode displaySongInfo() héritée de la classe abstraite SongComponent, pour qu'elle :
-       - affiche le nom du groupe et sa description (en appelant le getters)
-       - boucle sur cahque membre (SongComponent/Song) de la liste et affiche ses infos (en appelant displaySongInfo de Song)*/
+    // On surcharge la méthode displaySongInfo() héritée de la classe abstraite SongComponent, pour qu'...
     public void displaySongInfo() {
+        // ...elle affiche le nom du groupe et sa description (en appelant les getters)
         System.out.println(getGroupName() + " " +getGroupDescription() + "\n");
+        // ...elle boucle sur chaque membre (SongComponent/Song) de la liste et affiche ses infos (en appelant displaySongInfo de Song)
         Iterator songIterator = songComponents.iterator();
         while(songIterator.hasNext()) {
             SongComponent songInfo = (SongComponent) songIterator.next();
