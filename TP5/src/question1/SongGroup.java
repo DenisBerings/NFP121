@@ -15,6 +15,14 @@ public class SongGroup extends SongComponent {
         this.groupName = groupName ;
         this.groupDescription = groupDescription ;
     }
+    // On génère les getters pour les 2 variables (String) groupName & groupDescription
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public String getGroupDescription() {
+        return groupDescription;
+    }
     /* On surcharge la méthode add() héritée de la classe abstraite SongComponent, pour 
         - que la nouvelle méthode() appelle celle de la classe mère (augmente la taille de la liste de songComponents
         - qu'elle ajoute le nouveau songComponent à la liste de songComponents instanciée */
@@ -33,14 +41,6 @@ public class SongGroup extends SongComponent {
        retourner le membre de la liste songComponents instanciée auquel l'index correspond (en s'assurant de renvoyer sous forme de songComponent*/
     public SongComponent getComponent(int index) {
         return (SongComponent) this.songComponents.get(index);
-    }
-    // On génère les getters pour les 2 variables (String) groupName & groupDescription
-    public String getGroupName() {
-        return groupName;
-    }
-
-    public String getGroupDescription() {
-        return groupDescription;
     }
     // On surcharge la méthode displaySongInfo() héritée de la classe abstraite SongComponent, pour qu'...
     public void displaySongInfo() {
